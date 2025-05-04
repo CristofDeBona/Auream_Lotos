@@ -1,0 +1,334 @@
+/*Questo è lo stylesheet dove le varie caratteristiche estetiche vengono definite attraverso l'uso del css
+Per lo stile ho deciso di non utilizzare immagini e di lasciare tutto molto semplice alla vista giocando col nero e con il color oro*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: black;
+  width: 100vw;
+  height: 2.5vh;
+  color: #B88A44;
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+  font-family: 'Lobster', cursive;
+}
+
+header > * {
+  align-self: center;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 4em;
+  font-size:30px;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#intro {
+  background-color:black;
+  background-blend-mode: color;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  color: #B88A44;
+  background-size: cover;
+  font-family:Brush Script MT;
+  font-size:30px;
+}
+
+#intro > div {
+  width: 50%;
+  min-width: 700px;
+  padding: 1em;
+  align-self: center;
+  font-family:Brush Script MT;
+  font-size:30px;
+}
+
+p {
+  font-style: italic;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+main {
+  background-color: black;
+}
+
+main h1 {
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  width: 100vw;
+}
+
+#menu-title {
+  background-color: #000;
+  color: white;
+  padding: 2em;
+}
+
+#menu-title h1 {
+  text-transform: uppercase;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  max-width: 95vw;
+}
+
+#info {
+  padding: 0 2em;
+  background-color: black;
+  color:white
+}
+
+#info p {
+  max-width: 95vw;
+}
+
+#info address {
+  margin-top: 5em;
+}
+
+@media(max-width: 1000px) {
+  header {
+    font-size: 2em;
+  }
+  #logo {
+    font-size: 4em;
+  }
+  #intro-sec p {
+    font-size: 2rem;
+  }
+  #intro-sec h1 {
+    font-size: 4rem;
+  }
+  #menu-title h1 {
+    font-size: 4rem;
+  }
+  #menu-title span {
+    font-size: 2rem;
+  }
+  #booking-sec a {
+    padding: 2em 4em;
+  }
+  #booking-sec span {
+    font-size: 2rem;
+  }
+}
+
+/*form styling */
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+form p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+} 
+
+form h2 {
+  color: #fff;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px 15px;
+
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: black;
+  color:white;
+  margin: 200px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#back {
+  background-color: #000;
+}
+
+.container-time {
+  background-color: rgba(0, 0, 0, .95);
+  padding: 50px;
+  outline: 3px dashed #998100;
+  outline-offset: -30px;
+  text-align: center;
+  color: #fff;
+}
+
+.orari {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.giorni {
+  color: #998100;
+  font-size: 30px;
+}
+
+.container-form {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #000;
+}
+
+.btn {
+  background-color: #B88A44;
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/* Stile base per il bottone Cancella Prenotazione */
+button[type="button"] {
+  background-color: #333; /* Colore di sfondo nero */
+  color: white; /* Colore del testo bianco */
+  border: none; /* Nessun bordo */
+  padding: 10px 20px; /* Spaziatura interna */
+  text-align: center; /* Allineamento del testo */
+  text-decoration: none; /* Nessuna sottolineatura */
+  display: inline-block; /* Visualizzazione in linea */
+  font-size: 16px; /* Dimensione del font */
+  margin: 4px 2px; /* Margine */
+  cursor: pointer; /* Cursore a forma di mano */
+  border-radius: 4px; /* Bordi arrotondati */
+  transition: background-color 0.3s; /* Transizione per il cambio di colore */
+}
+
+/* Stile quando il cursore del mouse si avvicina al bottone */
+button[type="button"]:hover {
+  background-color: #000; /* Colore di sfondo nero più scuro */
+}
+
+/*Stile slideshow*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Nasconde le immagini di default */
+.slide {
+  display: none;
+}
+
+/* Bottoni per la prossima e la precedente immagine */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* posizione il bottone "next" a destra */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Quando ci passi sopra col mause aggiunge un background nero */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Gli indicatori del numero di immagini, dot*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
